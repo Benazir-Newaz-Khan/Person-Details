@@ -1,185 +1,130 @@
-<!-- Declares the document type as HTML5 -->
 <!DOCTYPE html>
-<!-- Opening html tag with language set to English -->
 <html lang="en">
 
-<!-- Head section containing metadata -->
 <head>
-    <!-- Sets character encoding to UTF-8 for proper text display -->
     <meta charset="UTF-8">
-    <!-- Makes the page responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Sets the title that appears in browser tab -->
     <title>Registration Form</title>
 </head>
 
-<!-- Body section containing visible content -->
 <body>
-    <!-- Centers all content horizontally (deprecated but still works) -->
     <center>
-        <!-- Creates a table for layout (old-school method, not recommended for modern web) -->
         <table width="33%" cellpadding="0" cellspacing="0">
-            <!-- Table row -->
             <tr>
-                <!-- Table data cell -->
                 <td>
-                    <!-- Starts a form (no action/method specified) -->
                     <form>
-                        <!-- Creates a bordered box with a legend -->
                         <fieldset>
-                            <!-- Legend/title for the fieldset -->
                             <legend>
-                                <!-- Heading level 2 -->
                                 <h2>Personal Details</h2>
                             </legend>
-                            <!-- Nested table for form layout -->
                             <table width="100%" cellpadding="5">
-                                <!-- Table row for first name -->
                                 <tr>
-                                    <!-- Table cell aligned right, 40% width -->
                                     <td align="right" width="40%">First name:</td>
-                                    <!-- Table cell with 60% width -->
-                                    <td width="60%">
-                                        <!-- Text input field spanning full width -->
-                                        <input type="text" style="width: 100%;">
-                                    </td>
+                                    <td width="60%"><input type="text" style="width: 100%;"></td>
                                 </tr>
-                                <!-- Table row for last name -->
                                 <tr>
                                     <td align="right">Last name:</td>
-                                    <td>
-                                        <input type="text" style="width: 100%;">
-                                    </td>
+                                    <td><input type="text" style="width: 100%;"></td>
                                 </tr>
-                                <!-- Table row for gender selection -->
                                 <tr>
                                     <td align="right">Gender:</td>
                                     <td>
-                                        <!-- Radio button for male -->
                                         <input type="radio" name="gender" id="male">
-                                        <!-- Label for male radio button -->
                                         <label for="male">Male</label>
-                                        <!-- Radio button for female -->
                                         <input type="radio" name="gender" id="female">
-                                        <!-- Label for female radio button -->
                                         <label for="female">Female</label>
                                     </td>
                                 </tr>
-                                <!-- Table row for language selection -->
                                 <tr>
                                     <td align="right">Language:</td>
                                     <td>
-                                        <!-- Checkbox for Bengali -->
                                         <input type="checkbox" id="bengla">
                                         <label for="bengla">Bengla</label>
-                                        <!-- Checkbox for English -->
                                         <input type="checkbox" id="english">
                                         <label for="english">English</label>
                                     </td>
                                 </tr>
-                                <!-- Table row for date of birth -->
                                 <tr>
                                     <td align="right">DOB:</td>
-                                    <td>
-                                        <!-- Date picker input -->
-                                        <input type="date" style="width: 100%;">
-                                    </td>
+                                    <td><input type="date" style="width: 100%;"></td>
                                 </tr>
-                                <!-- Table row for color preference -->
                                 <tr>
                                     <td align="right">Preferred color:</td>
-                                    <td>
-                                        <!-- Color picker input -->
-                                        <input type="color" style="width: 25%;">
-                                    </td>
+                                    <td><input type="color" style="width: 25%;"></td>
                                 </tr>
                             </table>
                         </fieldset>
 
-                        <!-- Second fieldset for contact details -->
                         <fieldset>
-                            <!-- Bold legend -->
                             <legend><b>Contact Details</b></legend>
-                            <!-- Label for country dropdown -->
                             <label for="country">Country :</label>
-                            <!-- Dropdown select element -->
                             <select>
-                                <!-- Options for various countries -->
                                 <option>Bangladesh</option>
                                 <option>United States</option>
                                 <option>Canada</option>
-                                <!-- ... more country options ... -->
+                                <option>United Kingdom</option>
+                                <option>Australia</option>
+                                <option>Germany</option>
+                                <option>France</option>
+                                <option>Italy</option>
+                                <option>Spain</option>
+                                <option>Brazil</option>
+                                <option>Argentina</option>
+                                <option>Mexico</option>
+                                <option>South Africa</option>
+                                <option>Egypt</option>
+                                <option>Nigeria</option>
+                                <option>Kenya</option>
+                                <option>Russia</option>
+                                <option>Turkey</option>
+                                <option>South Korea</option>
                                 <option>Japan</option>
                             </select>
-                            <!-- Line breaks for spacing -->
                             <br>
                             <br>
-                            <!-- Label for state input -->
                             <label for="state">State :</label>
-                            <!-- Text input with placeholder -->
                             <input type="text" id="state" name="state" placeholder="Enter your State Name">
                             <br>
                             <br>
-                            <!-- Label for address input -->
                             <label for="address">Address :</label>
-                            <!-- Text input with placeholder -->
                             <input type="text" id="address" name="address" placeholder="Enter your Address">
                         </fieldset>
 
-                        <!-- Third fieldset for digital contact details -->
                         <fieldset>
                             <legend>
                                 <h3>Contact Details (Digital)</h3>
                             </legend>
-                            <!-- Another nested table for layout -->
                             <table width="100%" cellpadding="5">
-                                <!-- Table row for email -->
                                 <tr>
                                     <td align="right" width="40%">Email:</td>
-                                    <td width="60%">
-                                        <input type="text" style="width: 100%;">
-                                    </td>
+                                    <td width="60%"><input type="text" style="width: 100%;"></td>
                                 </tr>
-                                <!-- Table row for phone number -->
                                 <tr>
                                     <td align="right">Phone:</td>
-                                    <td>
-                                        <!-- Country code displayed statically -->
-                                        +880 
-                                        <!-- Phone number input -->
-                                        <input type="text" style="width: 80%;">
-                                    </td>
+                                    <td>+880 <input type="text" style="width: 80%;"></td>
                                 </tr>
                             </table>
                         </fieldset>
 
-                        <!-- Fourth fieldset for about yourself -->
                         <fieldset>
                             <legend>
                                 <h3>Write something about yourself</h3>
                             </legend>
                             <table width="100%" cellpadding="5">
-                                <!-- Empty table rows for spacing -->
                                 <tr>
                                     <td align="right"></td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td align="right"></td>
-                                    <td>
-                                        <!-- Multi-line text area -->
-                                        <textarea rows="4" cols="50"></textarea>
-                                    </td>
+                                    <td><textarea rows="4" cols="50"></textarea></td>
                                 </tr>
                             </table>
                         </fieldset>
 
-                        <!-- Line breaks for vertical spacing -->
                         <br><br>
 
-                        <!-- Center the submit button -->
                         <center>
-                            <!-- Submit button for the form -->
                             <input type="submit" value="Register">
                         </center>
                     </form>
